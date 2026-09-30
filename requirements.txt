@@ -1,0 +1,23 @@
+# Phase 1 — document ingestion + chunking
+pypdf>=4.0.0          # PDF text extraction
+tiktoken>=0.7.0       # accurate token counting (OpenAI-compatible)
+
+# Testing
+pytest>=8.0.0
+
+# Phase 2 - free stack
+sentence-transformers>=3.0.0
+google-genai>=1.0.0
+groq>=0.9.0
+qdrant-client>=1.9.0
+python-dotenv>=1.0.0
+numpy>=1.26.0
+
+# Phase 3 - hybrid search
+rank-bm25>=0.2.1
+
+# Phase 6 - REST API
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+httpx2>=0.28.0

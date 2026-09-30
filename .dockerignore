@@ -1,0 +1,28 @@
+# Node / Next.js — not needed in the Python backend image
+dashboard/node_modules
+dashboard/.next
+dashboard/.turbo
+dashboard/out
+
+# Python cache
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.mypy_cache
+
+# Dev / secrets
+.env
+.env.*
+!.env.example
+
+# Git / CI
+.git
+.github
+.gitignore
+
+# Editor
+.vscode
+.idea
+*.swp

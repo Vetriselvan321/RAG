@@ -1,0 +1,29 @@
+[
+  {
+    "query": "Who created Python and when?",
+    "ground_truth": "Python was created by Guido van Rossum and first released in 1991.",
+    "answer": "Python was created by Guido van Rossum in 1991. It is a high-level programming language known for its readability. [1]",
+    "contexts": [
+      "Python is a high-level programming language created by Guido van Rossum in 1991. It emphasizes code readability and simplicity.",
+      "Python is widely used for web development, data science, machine learning, and automation tasks."
+    ]
+  },
+  {
+    "query": "What is Python used for?",
+    "ground_truth": "Python is used for web development, data science, machine learning, automation, and scripting.",
+    "answer": "Python is used for a wide range of tasks including web development, data science, machine learning, automation, and scripting. Its simple syntax makes it accessible for beginners and experts alike. [1][2]",
+    "contexts": [
+      "Python is widely used for web development, data science, machine learning, and automation tasks.",
+      "Python is a high-level programming language created by Guido van Rossum in 1991. It emphasizes code readability and simplicity."
+    ]
+  },
+  {
+    "query": "What is the boiling point of water?",
+    "ground_truth": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at standard atmospheric pressure.",
+    "answer": "Based on the provided context, I cannot answer this question as the context only contains information about Python programming and does not mention water or its boiling point.",
+    "contexts": [
+      "Python is a high-level programming language created by Guido van Rossum in 1991.",
+      "Machine learning uses statistical algorithms to learn patterns from data automatically."
+    ]
+  }
+]
