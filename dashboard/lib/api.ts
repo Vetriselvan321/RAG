@@ -23,6 +23,7 @@ export interface SearchResult {
 export interface AskResponse {
   answer: string
   citations?: SearchResult[]
+  cited_sources?: SearchResult[]
 }
 
 export interface UploadResponse {
