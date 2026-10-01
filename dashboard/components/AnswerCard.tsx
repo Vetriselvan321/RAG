@@ -16,17 +16,17 @@ export default function AnswerCard({ result }: Props) {
       </div>
 
       {/* Citations */}
-      {result.cited_sources.length > 0 && (
+      {result.cited_sources && result.cited_sources.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
           {result.cited_sources.map((src, i) => (
             <span
-              key={src}
+              key={src.source ?? src.text ?? i}
               className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-accent-blue/10 border border-accent-blue/20 text-[11px] font-medium text-accent-blue"
             >
               <span className="w-4 h-4 rounded-full bg-accent-blue text-white text-[9px] flex items-center justify-center font-bold">
                 {i + 1}
               </span>
-              <span className="font-mono">{src}</span>
+              <span className="font-mono">{src.source ?? src.text ?? i}</span>
             </span>
           ))}
         </div>

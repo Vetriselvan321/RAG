@@ -28,6 +28,8 @@ export interface AskResponse {
 
 export interface UploadResponse {
   message: string
+  filename: string
+  chunks_stored: number
   chunks_created?: number
 }
 

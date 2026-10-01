@@ -166,13 +166,13 @@ export default function AskPage() {
                     <div className="flex flex-wrap gap-1.5 max-w-[85%]">
                       {msg.cited_sources.map((src, j) => (
                         <span
-                          key={src}
+                          key={src.source ?? src.text ?? j}
                           className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-accent-blue/10 border border-accent-blue/20 text-[11px] font-medium text-accent-blue"
                         >
                           <span className="w-4 h-4 rounded-full bg-accent-blue text-white text-[9px] flex items-center justify-center font-bold flex-shrink-0">
                             {j + 1}
                           </span>
-                          <span className="font-mono truncate max-w-[140px]">{src}</span>
+                          <span className="font-mono truncate max-w-[140px]">{src.source ?? src.text ?? j}</span>
                         </span>
                       ))}
                     </div>
