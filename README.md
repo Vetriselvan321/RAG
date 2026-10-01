@@ -49,6 +49,9 @@ Most RAG projects are thin wrappers around an LLM API. This one implements the c
 
 ---
 
+## Live Demo
+https://rag-a51i0ly1a-vetriselvan-s-projects.vercel.app/
+
 ## Architecture
 
 ```
