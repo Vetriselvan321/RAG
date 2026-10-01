@@ -1,23 +1,26 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { ask } from '@/lib/api'
+
+import { ask, SearchResult } from '@/lib/api'
+
 import { useAPIKeys } from '@/context/APIKeyContext'
+
 import {
   Send, Brain, Sparkles, BookOpen,
   FileText, Layers, FileQuestion, AlertCircle,
 } from 'lucide-react'
 
 interface Citation { source: string; text: string }
+
 interface Message {
   id: string
   role: 'user' | 'assistant'
   content: string
-  cited_sources?: string[]
+  cited_sources?: SearchResult[]
   citations?: Citation[]
   error?: boolean
 }
-
 const SUGGESTIONS = [
   { icon: Brain,        text: 'What is Retrieval Augmented Generation?' },
   { icon: BookOpen,     text: 'Summarize the uploaded documents' },
